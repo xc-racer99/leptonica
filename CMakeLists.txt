@@ -48,13 +48,13 @@ set(VERSION_PLAIN ${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_PATCH})
 option(BUILD_PROG "Build utility programs" OFF)
 
 if(NOT EXISTS ${PROJECT_SOURCE_DIR}/.cppan)
-    find_package(GIF)
+#    find_package(GIF)
     find_package(JPEG)
     find_package(PNG)
     find_package(TIFF)
     find_package(ZLIB)
 
-    find_package(PkgConfig)
+#    find_package(PkgConfig)
 
     if (PKG_CONFIG_FOUND)
     pkg_check_modules(WEBP libwebp)
